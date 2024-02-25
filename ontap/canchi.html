@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="duong">
+    <button onclick="xem()">Xem</button>
+    <h2 id="am"></h2>
+    <script>
+        function xem(){
+            let namDuong = document.getElementById("duong").value;
+            alert(namDuong);
+            let can = namDuong % 10;
+            let chi = namDuong %12;
+            let am = ''
+            if(can ==0){
+                am = 'Canh';
+
+            }
+            if(can ==1){
+                am = 'Tân';
+
+            }if(can ==2){
+                am = 'Nhâm';
+
+            }if(can ==3){
+                am = 'Quý';
+
+            }if(can ==4){
+                am = 'Giáp';
+
+            }if(can ==5){
+                am = 'Ất';
+
+            }if(can ==6){
+                am = 'Bính';
+
+            }if(can ==7){
+                am = 'Đinh';
+
+            }if(can ==8){
+                am = 'Mậu';
+
+            }if(can ==9){
+                am = 'Kỷ';
+
+            }
+            switch(chi){
+                case 0:
+                    am +='Thân'
+                    break;
+                case 1:
+                    am +='Dậu';
+                    break;
+                    case 2:
+                    am +='Tuất';
+                    break;
+                    case 3:
+                    am +='Hợi';
+                    break;
+                    case 4:
+                    am +='Tý';
+                    break;
+                    case 5:
+                    am +='Sửu';
+                    break;
+                    case 6:
+                    am +='Dần';
+                    break;
+                    case 7:
+                    am +='Mão';
+                    break;
+                    case 8:
+                    am +='Thìn';
+                    break;
+                    case 9:
+                    am +='Tỵ';
+                    break;
+                    case 10:
+                    am +='Ngọ';
+                    case 11:
+                    am +='Mùi';
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
