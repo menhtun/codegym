@@ -6,13 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
-    <h2 id="x"></h2>
+    <input type="text" id="x">
+    <button onclick="f1()">Ấn</button>
+    <h1 id="y"></h1>
     <script>
-        alert("hello");
-        document.write("hello");
-        document.getElementById('x').innerHTML = ("hello")
-
+        function f1(){
+            let z = document.getElementById("x").value;
+            document.getElementById("y").innerHTML = z * 10;
+        }
+       
     </script>
 </body>
 </html>
