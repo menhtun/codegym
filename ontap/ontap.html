@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let X =+prompt("nhập vào số tiền: ");
+        for(let s5 =0; s5*5 <=X; s5++){
+            for(let s2 =0; s2*2<=X; s2++){
+                for(let s1 =0; s1*1<=X; s1++){
+                    if(s5*5 + s2+2 +s1 ==X){
+                        document.write(s5 +',' +s2 + ',' +s1 +'<br>');
+                    }
+                }
+            }
+
+        }
+
+    </script>
+</body>
+</html>
