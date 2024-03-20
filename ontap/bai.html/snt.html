@@ -16,19 +16,21 @@
         }
         return kq;
     }
-    function inNSnt(n){
-        document.write(2);
+    function inNSnt2(n){
+        let arr = [];
+        arr.push(2);
         let x = 3;
         let dem = 1;
         while(dem < n){
             if(checkSNT(x)){
-                document.write('<br>'+x);
+                arr.push(x);
                 dem++;
             }
             x++;
         }
+        return arr;
     }
-    inNSnt(5);
+    document.write(inNSnt2(15));
     </script>
 </body>
 </html>
