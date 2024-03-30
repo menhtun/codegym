@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--OOP: lập trình hướng đối tượng
+    Khái niệm: OOP là 1 cách tổ chức giữ liệu giúp mô tả thông tin cần quản lý dễ hơn
+    Đối tượng là 1 biến đặc biệt(bên trong nó sẽ có nhiều ptu có tên)
+    Cú pháp: a = {}
+    cách dùng: a.name
+    
+    
+    Lớp:-->
+    <script>
+        let a ={
+        name: 'Nal'
+        age: 18,
+        ispoor: true,
+        address: "TB",
+        f1: function(){
+            alert("haha");
+        },
+        };
+        a.f1();
+        
+        //Tạo 2 đối tượng có tên: A, B. điểm 8, 10. xếp hạng khá, giỏi
+        //Lớp là bộ khung để tạo ra các đối tượng có tên các phần tử giống nhau
+        class Student{
+            constructor(name, age, score){
+            this.name = name;
+            this.age = age;
+            this.score = score;
+        }
+        f2(){
+            alert(this.name + "," + this.age + "," + this.score);
+
+        }
+    }
+        let s1 = new Student("ABC", 20, 10);
+        let s2 = new Student("CDEF", 20, 8);
+        s1.f2();
+        s2.f2();
+    </script>
+</body>
+</html>
